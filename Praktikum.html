@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js" ></script>
+
+    <style>
+        *{
+        box-sizing: border-box;
+    }
+    [class*="col-"]{
+        padding: 15px; float: left; width: 100%;
+    }
+    @media only screen and (min-width: 600px){
+        /*for tablets*/
+        .col-1 {width:8.33%;}
+        .col-2 {width:16.66%;}
+        .col-3 {width:25%;}
+        .col-4 {width:33.33%;}
+        .col-5 {width:41.66;}
+        .col-6 {width:50%;}
+        .col-7 {width:58.33%;}
+        .col-8 {width:66.66%;}
+        .col-9 {width:75%;}
+        .col-10 {width:83.33%;}
+        .col-11 {width:91.66%;}
+        .col-12 {width:100%;}
+    }
+    @media only screen and (min-width: 768px){
+        /*for detskop*/
+        .col-s-1 {width:8.33%;}
+        .col-s-2 {width:16.66%;}
+        .col-s-3 {width:25%;}
+        .col-s-4 {width:33.33%;}
+        .col-s-5 {width:41.66;}
+        .col-s-6 {width:50%;}
+        .col-s-7 {width:58.33%;}
+        .col-s-8 {width:66.66%;}
+        .col-s-9 {width:75%;}
+        .col-s-10 {width:83.33%;}
+        .col-s-11 {width:91.66%;}
+        .col-s-12 {width:100%;}
+    }
+        .header{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("200810300729041.jpg")  ;
+            background-size: cover;
+            height:100vh ;
+            background-position: center;
+        }
+        .tittle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+            color: #f8f3e6;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top ">
+        <a href="#">
+            <img src="adiwiyata.png" width="150" alt="">
+        </a>
+        <!-- panggilan icon menu saat menubar disembunyikan  -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar navbar-toogler-icon"></span>
+        </button>
+        <!-- daftar menu pada navbar -->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Isi</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="Kontak" data-toggle="dropdown">Kontak</a>
+                    <div class="dropdown-menu">
+                    <a href="https://www.facebook.com/" class="dropdown-item">facebook</a>
+                    <a href="https://www.instagram.com/" class="dropdown-item">Instagram</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="tittle">
+        LINGKUNGAN HIDUP
+        </div>
+    </div>
+    <hr>
+    <hr>
+
+    <h3>Lingkungan Hidup : </h3>    
+    <div class="container col-12">
+        <div class="carousel indicators" data-ride="carousel" id="slide">
+        <!-- Indikator Slide -->
+        <ul class="carousel-indicators">
+            <li data-target="#slide" data-slide-to="0" class="active"></li>
+            <!-- class active adalahelemen tersebut yang pertama kali ditampilkan saat load halaman -->
+            <li data-target="#slide" data-slide-to="1"></li>
+            <li data-target="#slide" data-slide-to="2"></li>
+        </ul>
+
+        <!-- gambar slide -->
+        <div >
+            <div class="carousel-item active">
+                <img src="Masyarakat-Berperan-Besar-dalam-Melestarikan-Lingkungan-Hidup.jpg" width="100%" height="400" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="terasering1.jpg" width="100%" height="400" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="Pelestarian Lingkungan Hidup.jpg" width="100%" height="400" alt="">
+            </div>
+        </div>
+
+        <!-- navigasi pane -->
+        <a href="#slide" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slide" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        </div>
+        </div>
+        <div >
+            Pengertian lingkungan hidup adalah sebuah kesatuang ruang dengan segala benda dan makhluk hidup
+            di dalamnya termasuk manusia dan perilakunya yang mempengaruhi keberlangsungan perikehidupan dan
+            kesejahteraan manusia dan makhluk hidup yang lainnya. Lingkungan hidup mencakup ekosistem, perilaku
+            sosial, budaya, dan juga udara yang ada. 
+        </div>
+    </div>
+        <hr><hr>
+        <h3>TOGA</h3>
+            <div class="card col-5">
+                <img src="daun-dewa.jpg" class="card-img-top">
+                <div class="card-header bg-info text-white">Daun Dewa</div>
+                <div class="card-body"> Daun dewa bisa dimanfaatkan sebagai tanaman untuk mengataasi penyakit stroke, 
+                    rematik, gula tinggi (diabetes), sakit jantung, hipertensi, kanker, pendarahan atau pembengkakan
+                    payudara, luka, bekas gigitan binatang buas, kutil, ganglion (sejenis kista yang mucnul pada bagian
+                    tangan dan kaki), batuk darah, muntah darah, demam berdarah, kejang-kejang pada anak, wasir, keseleo,
+                    gangguan haid, dan beberapa sifat-sifat kimia tersebut yang termasuk fungsi pengobatannya. Klik disini
+                    untuk melihat produknya. </div>
+            </div>
+            <div class="card col-5">
+                <img src="Daun-Pacar-Cina.jpg" class="card-img-top">
+                <div class="card-header bg-info text-white">Daun Pacar Cina</div>
+                <div class="card-body">Daunnya yang mempunyai bentuk bulat telur sungsang dan lonjong ini mempunyai sifat kimia berupa rasa pedas, manis, dan netral.
+                    Daun pacar cina mengandung garam-garam mineral, alkaloid, minyak atsiri, dan damar.
+                    Bagian daun, bunga, dan batang pada tanaman pacar cina (yang lebih sering bagian daunnya) bisa dioleh
+                    menjadi tanaman obat keluarga untuk menyembuhkan beberapa penyakit seperti luka memar, bisul, dan haid
+                    berlebihan. Bagian bunganya bisa untuk mengatasi perut kembung, batuk, pusing, dan sulit menelan.
+                    Klik disini untuk melihat / membeli produk daun pacar cina yang kami jual.</div>
+            </div>
+            <div class="card col-5">
+                <img src="Landep.jpg" class="card-img-top">
+                <div class="card-header bg-info text-white">Landep</div>
+                <div class="card-body">Daun landep mempunyai khasiat untuk mengatasi rasa sakit ketika kencing atau sebagai
+                    peluruh kencing. Kemampuan tersebut dimiliki oleh daun landep karena mempunyai sifat diuretik dari
+                    kandungan-kandungan kimiawi yang secara alami berada di dalamnya. Selain bagian daunnya, bagian akar
+                    landep juga bisa dimanfaatkan untuk meredakan demam. Sedangkan kulit kayunya mempunyai khasiat untuk
+                    meluruhkan dahak dan keringat.</div>
+            </div>
+            <div class="card col-5">
+                <img src="Jinten-Hitam.jpg" class="card-img-top">
+                <div class="card-header bg-info text-white">Jinten Hitam</div>
+                <div class="card-body">Jinten hitam sendiri sudah diteliti dan dilaporkan memberi manfaat pada bidang 
+                    farmasi untuk banyak jenis pengobatan seperti anti-bakteri, anti-jamur, analgesik, anti-radang,
+                    anti-maag, anti-hipertensi, antivirus, asma, alergi, gangguan imun, masalah pada saluran pencernaan,
+                    diabetes, kanker usur besar, dan epilepsi. Perlu juga ketahui bahwasanya jinten hitam memberikan beberapa
+                    efek samping sehingga pengonsumsiannya harus di bawah pantauan ahli pada dosis yang dianjurkan.</div>
+            </div>
+            </div>
+    </div>
+    <hr><hr>
+    <div class="container">
+        <h3>HARI-HARI LINGKUNGAN :</h3>
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-warning">
+                    <th>Tanggal</th>
+                    <th>Peringatan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>10 JANUARI</td>
+                    <td>Hari Perencanaan Gerakan 1 Juta Pohon </td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>2 FEBRUARI</td>
+                    <td>Hari lahan basah Se Dunia</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>21 FEBRUARI </td>
+                    <td>Hari Peduli Sampah nasional </td>
+                </tr>
+                <tr class="table-primary">
+                    <td>6 MARET </td>
+                    <td>Hari Strategi konservasi Se Dunia </td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>16 MARET</td>
+                    <td>Hari Bhakti Rimbawan</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>20 MARET </td>
+                    <td>Hari Kehutanan Sedunia </td>
+                </tr>
+                <tr class="table-primary">
+                    <td>21 MARET</td>
+                    <td>Hari Hutan Internasional </td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>22 MARET</td>
+                    <td>Hari Air Se Dunia </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>23 MARET</td>
+                    <td>Hari Meteorolgi</td>
+                </tr>
+                <tr class="table-primary">
+                    <td>22 APRIL</td>
+                    <td>Hari Bumi </td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>21 MEI</td>
+                    <td>Hari Keanekaragaman Hayati </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>5 JUNI</td>
+                    <td>Hari Lingkungan Hidup Sedunia </td>
+                </tr>
+                <tr class="table-primary">
+                    <td>17 JUNI</td>
+                    <td>Hari Penanggulangan Degradasi Lahan dan Kekeringan Se Dunia </td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>10 AGUSTUS </td>
+                    <td>Hari Konservasi Alam Nasional </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>16 SEPTEMBER </td>
+                    <td>Hari Ozon Internasional</td>
+                </tr>
+                <tr class="table-primary">
+                    <td>6 OKTOBER</td>
+                    <td>Hari Habitat Se Dunia </td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>16 OKTOBER</td>
+                    <td>Hari Pangan Se Dunia </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>5 NOVEMBER</td>
+                    <td>Hari Cinta Puspa dan Satwa Nasional </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>28 NOVEMBER </td>
+                    <td>HMPI dan BMN </td>
+                </tr>
+                <tr class="table-danger">
+                    <td>4 DESEMBER</td>
+                    <td>Hari Konservasi Ken Liar Se Dunia </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright by Ngga
+    </div>
+</body>
+</html>
